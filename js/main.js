@@ -15,22 +15,7 @@ window.StarterKit = {
     $cardWrapper = $("<div class='card-wrapper'>");
     $('.cards').append($cardWrapper);
     card.appendTo($cardWrapper[0]).then(function() {
-      card.render('thumbnail', {
-        width: 600,
-        height: 200
-      });
-
-      $cardWrapper.find('iframe').css({
-        width: 600,
-        height: 200
-      });
-
-      setTimeout(function() {
-        $('.card-wrapper').find('iframe').css({
-          width: 600,
-          height: 200
-        });
-      }, 100); // TODO : why can I not set the iframe's css width and height right away?
+      card.render();
     });
 
     this.wiretapCard(card);

@@ -15,7 +15,8 @@ var card = Conductor.card({
   },
 
   render: function(intent, dimensions) {
-    $('body').html('example card rendered!');
+    // you need to have a block level element that has width, so the container can size you
+    $('body').html('<div id="width-target">example card rendered!</div>');
   },
 
   resize: function(dimensions) {
