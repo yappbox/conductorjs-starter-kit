@@ -32,6 +32,8 @@ window.StarterKit = {
         });
       }, 100); // TODO : why can I not set the iframe's css width and height right away?
     });
+
+    this.wiretapCard(card);
   },
   initializeIframeBorderToggle: function() {
     $('#show-borders').on('change', function() {
