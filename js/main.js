@@ -1,6 +1,6 @@
 window.StarterKit = {
   initialize: function() {
-    var conductor, card, cardUrl, $cardWrapper;
+    var conductor, card, cardId, cardUrl, $cardWrapper;
     conductor = this.conductor = new Conductor();
 
     this.initializeAnalytics();
